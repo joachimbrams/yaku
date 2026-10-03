@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="da" data-theme="yaku">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4ede2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Yaku">
+<link rel="apple-touch-icon" href="/yaku/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/yaku/favicon-64.png">
+<title>Yaku</title>
+<script>
+  // Temaet sættes før første billede, så siden ikke blinker
+  try { const t = JSON.parse(localStorage.getItem('yaku-ui') || '{}').theme; if (t) document.documentElement.dataset.theme = t; } catch {}
+</script>
+  <script type="module" crossorigin src="/yaku/assets/index-D8UMHgGB.js"></script>
+  <link rel="stylesheet" crossorigin href="/yaku/assets/index-Cpqttdpd.css">
+<link rel="manifest" href="/yaku/manifest.webmanifest"></head>
+<body>
+<div class="app" id="app"><main class="panel"><div class="loading">Henter …</div></main></div>
+<div class="pop" id="pop" role="dialog" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
